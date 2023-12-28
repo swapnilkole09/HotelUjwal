@@ -3,7 +3,7 @@ import {foodItem} from './fooditem.js'
 function displayItems(){
     var biryani= document.getElementById('biryani');
     var paneer=  document.getElementById('paneer');;
-    var chicken=  document.getElementById('chicken');
+    var chicken=  document.getElementById('starters');
     var vegetable=  document.getElementById('vegetable');
     var chinese=  document.getElementById('chinese');
     var southIndian=  document.getElementById('south-indian');
@@ -11,11 +11,13 @@ function displayItems(){
     
 
     const biryaniData= foodItem.filter((item)=>item.category=='biryani');
-    const chickenData= foodItem.filter((item)=>item.category=='chicken');
+    const chickenData= foodItem.filter((item)=>item.category=='starters');
     const PaneerData= foodItem.filter((item)=>item.category=='paneer');
     const vegetableData= foodItem.filter((item)=>item.category=='vegetable');
     const chineseData= foodItem.filter((item)=>item.category=='chinese');
     const southData= foodItem.filter((item)=>item.category=='south indian');
+
+
     biryaniData.map(item=>{
         
         var itemCard= document.createElement('div');
@@ -46,7 +48,7 @@ function displayItems(){
 
         var itemPrice= document.createElement('p');
         itemPrice.setAttribute('id','item-price');
-        itemPrice.innerText= 'Price : $ ' + item.price;
+        itemPrice.innerText= 'Price : ' + item.price + ' Rs.';
 
         itemCard.appendChild(cardTop);
         itemCard.appendChild(img);
@@ -87,7 +89,7 @@ function displayItems(){
 
         var itemPrice= document.createElement('p');
         itemPrice.setAttribute('id','item-price');
-        itemPrice.innerText= 'Price : $ ' + item.price;
+        itemPrice.innerText= 'Price :' + item.price + ' Rs.';
 
         itemCard.appendChild(cardTop);
         itemCard.appendChild(img);
@@ -127,7 +129,7 @@ function displayItems(){
 
         var itemPrice= document.createElement('p');
         itemPrice.setAttribute('id','item-price');
-        itemPrice.innerText= 'Price : $ ' + item.price;
+        itemPrice.innerText= 'Price : ' + item.price + ' Rs.';
 
         itemCard.appendChild(cardTop);
         itemCard.appendChild(img);
@@ -167,7 +169,7 @@ function displayItems(){
 
         var itemPrice= document.createElement('p');
         itemPrice.setAttribute('id','item-price');
-        itemPrice.innerText= 'Price : $ ' + item.price;
+        itemPrice.innerText= 'Price :' + item.price ;
 
         itemCard.appendChild(cardTop);
         itemCard.appendChild(img);
@@ -208,7 +210,7 @@ function displayItems(){
 
         var itemPrice= document.createElement('p');
         itemPrice.setAttribute('id','item-price');
-        itemPrice.innerText= 'Price : $ ' + item.price;
+        itemPrice.innerText= 'Price :' + item.price ;
 
         itemCard.appendChild(cardTop);
         itemCard.appendChild(img);
@@ -249,7 +251,7 @@ function displayItems(){
 
         var itemPrice= document.createElement('p');
         itemPrice.setAttribute('id','item-price');
-        itemPrice.innerText= 'Price : $ ' + item.price;
+        itemPrice.innerText= 'Price :' + item.price ;
 
         itemCard.appendChild(cardTop);
         itemCard.appendChild(img);
@@ -265,6 +267,19 @@ displayItems();
 
 const vegData= [...new Map(foodItem.map(item=> [item['category'],item])).values()];
 console.log(vegData);
+
+function openPopup() {
+    console.log('Opening popup'); 
+    var popup = document.getElementById('popup');
+    popup.style.display = 'block';
+}
+
+  function Closepopup() {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'none';
+}
+
+
 
 function selectTaste(){
     var categoryList= document.getElementById('category-list');
@@ -419,8 +434,8 @@ function totalAmount(){
         sum+= item.price;
     })
     document.getElementById('total-item').innerText= 'Total Item : ' + cartData.length;
-    document.getElementById('total-price').innerText= 'Total Price : $ ' + sum;
-    document.getElementById('m-total-amount').innerText= 'Total Price : $ ' + sum;
+    document.getElementById('total-price').innerText= 'Total Price : ' + sum + ' Rs';
+    document.getElementById('m-total-amount').innerText= 'Total Price :' + sum + ' Rs';
 }
 
 document.getElementById('cart-plus').addEventListener('click',cartToggle);
@@ -481,17 +496,17 @@ function addEvents(){
         item.addEventListener('click',decrementItem)
     })
 }
+var icon = document.getElementById('add-address');
 
-document.getElementById('add-address').addEventListener('click',addAddress);
 
-document.getElementById('m-add-address').addEventListener('click',addAddress);
+icon.addEventListener('click', function() {
+  
+  console.log('hjfksdg');
+  var link = "https://maps.app.goo.gl/A6vk69F27ELpkn3Y6";
 
-function addAddress(){
-    var address= prompt('Enter your address','');
-    if(address){
-        document.getElementById('add-address').innerText= ' ' + address;
-    }
-    else{
-        alert("Address not added")
-    }
-}
+  // Open the new page
+  window.open(link, '_blank') // for new tab 
+//   window.location.href = link;   // for current tab 
+});
+
+

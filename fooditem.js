@@ -1,7 +1,7 @@
 const foodItem= [
     {
     id: 1,
-    name: 'Ambur Biryani',
+    name: 'Veg Biryani',
     category : 'biryani',
     rating : 4.3,
     price: 13,
@@ -10,7 +10,7 @@ const foodItem= [
 },
 {
     id: 2,
-    name: 'Hyderabadi Biryani',
+    name: 'Veg Pulav',
     category : 'biryani',
     rating : 4.3,
     price: 15,
@@ -19,7 +19,7 @@ const foodItem= [
 },
 {
     id: 3,
-    name: 'Egg Biryani',
+    name: 'Panner Biryani',
     category : 'biryani',
     rating : 4.3,
     price: 18,
@@ -28,7 +28,7 @@ const foodItem= [
 },
 {
     id: 4,
-    name: 'Goan Fish Biryani',
+    name: 'Jeera Rice',
     category : 'biryani',
     rating : 4.3,
     price: 15,
@@ -37,7 +37,7 @@ const foodItem= [
 },
 {
     id: 5,
-    name: 'Mutton Biryani',
+    name: 'Soya Biryani',
     category : 'biryani',
     rating : 4.3,
     price: 10,
@@ -46,7 +46,7 @@ const foodItem= [
 },
 {
     id: 6,
-    name: 'Kamrupi Biryani',
+    name: 'Kolhapuri Biryani',
     category : 'biryani',
     rating : 4.3,
     price: 12,
@@ -55,7 +55,7 @@ const foodItem= [
 },
 {
     id: 7,
-    name: 'Kashmiri Biryani',
+    name: 'Khuska Rice',
     category : 'biryani',
     rating : 4.3,
     price: 13,
@@ -64,7 +64,7 @@ const foodItem= [
 },
 {
     id: 8,
-    name: 'Memoni Biryani',
+    name: 'Plane Rice',
     category : 'biryani',
     rating : 4.3,
     price: 20,
@@ -73,7 +73,7 @@ const foodItem= [
 },
 {
     id: 9,
-    name: 'Mughlai Biryani',
+    name: 'Masale Rice',
     category : 'biryani',
     rating : 4.3,
     price: 15,
@@ -82,8 +82,8 @@ const foodItem= [
 },
 {
     id: 10,
-    name: 'Chicken Roast',
-    category : 'chicken',
+    name: 'Rosted Papad',
+    category : 'starters',
     rating : 4.3,
     price: 11,
     img: 'images/chicken/Chicken_roast.jpg',
@@ -91,8 +91,8 @@ const foodItem= [
 },
 {
     id: 11,
-    name: 'Chicken Curry',
-    category : 'chicken',
+    name: 'Panner Chilli',
+    category : 'starters',
     rating : 4.3,
     price: 10,
     img: 'images/chicken/Chicken-Curry.jpg',
@@ -100,8 +100,8 @@ const foodItem= [
 },
 {
     id: 12,
-    name: 'Chicken Do Pyaza',
-    category : 'chicken',
+    name: 'Masale Papad',
+    category : 'starters',
     rating : 4.3,
     price: 14,
     img: 'images/chicken/Chicken-do-Pyaza.jpg',
@@ -109,8 +109,8 @@ const foodItem= [
 },
 {
     id: 13,
-    name: 'Chicken Masala',
-    category : 'chicken',
+    name: 'Soups',
+    category : 'starters',
     rating : 4.3,
     price: 12,
     img: 'images/chicken/Chicken-Masala.jpeg',
@@ -118,8 +118,8 @@ const foodItem= [
 },
 {
     id: 14,
-    name: 'Handi Chicken',
-    category : 'chicken',
+    name: 'Pani Puri',
+    category : 'starters',
     rating : 4.3,
     price: 17,
     img: 'images/chicken/Handi-chicken.jpg',
@@ -127,8 +127,8 @@ const foodItem= [
 },
 {
     id: 15,
-    name: 'Murgh Musallam',
-    category : 'chicken',
+    name: 'Ujwal Special',
+    category : 'starters',
     rating : 4.3,
     price: 20,
     img: 'images/chicken/Murgh-Musallam.jpg',
@@ -275,7 +275,7 @@ const foodItem= [
 },
 {
     id: 31,
-    name: 'Chicken Manchurian',
+    name: ' Manchurian',
     category : 'chinese',
     rating : 4.3,
     price: 7,
@@ -284,7 +284,7 @@ const foodItem= [
 },
 {
     id: 32,
-    name: 'Chili Chicken',
+    name: 'Chili ',
     category : 'chinese',
     rating : 4.3,
     price: 5,
@@ -311,7 +311,7 @@ const foodItem= [
 },
 {
     id: 35,
-    name: 'Szechuan Chicken',
+    name: 'Szechuan Manchurian',
     category : 'chinese',
     rating : 4.3,
     price: 10,
